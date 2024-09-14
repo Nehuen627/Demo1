@@ -1,0 +1,153 @@
+@use '../../Sass/Colors.scss' as a;
+@use '../../Sass/Fonts.scss' as b;
+
+.nosotrosContent {
+    background-color: a.$GreyPink;
+    margin: 50px 250px;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px a.$BlackShadow2;
+    padding: 40px;
+
+    h1 {
+        font-size: 2.5rem;
+        color: a.$Wine;
+        font-family: b.$Jost;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        .text {
+            color: a.$Wine;
+            margin-bottom: 40px;
+
+            p {
+                font-size: 1.2rem;
+                line-height: 1.6;
+            }
+        }
+
+        h2 {
+            font-family: b.$Jost;
+            color: a.$Wine;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .pictures {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 40px;
+
+            .imgContainer {
+                width: 400px;
+                height: 400px;
+                position: relative;
+                overflow: hidden;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px a.$BlackShadow;
+                transition: transform 0.3s ease;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    
+        img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+    }
+
+    // Tablet breakpoint (768px)
+    @media (max-width: 768px) {
+        margin: 30px 100px;
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .pictures {
+            gap: 30px;
+
+            .imgContainer {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+
+    // Phone breakpoint (480px)
+    @media (max-width: 480px) {
+        margin: 20px 20px;
+        padding: 20px;
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .pictures {
+            gap: 20px;
+
+            .imgContainer {
+                width: 150px;  
+                height: 150px; 
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    // Extra small phone breakpoint (375px and below)
+    @media (max-width: 375px) {
+        .pictures {
+            .imgContainer {
+                width: 130px;  
+                height: 130px; 
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,31 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modalOverlay .modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .modalOverlay .modalContent {
+    width: 90%;
+    padding: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .modalOverlay .modalContent {
+    width: 95%;
+    padding: 10px;
+  }
+}/*# sourceMappingURL=Modal.css.map */

@@ -1,0 +1,168 @@
+.customShapeDividerTop1721137628 {
+  background: rgba(51, 51, 51, 0);
+  background-image: url("../../Images/bgFooter.svg");
+  aspect-ratio: 960/300;
+  background-repeat: no-repeat;
+  background-position: center 53%;
+  background-size: cover;
+  width: 100%;
+  line-height: 0;
+  padding-top: 3%;
+  /* Tablet Styles */
+  /* Mobile Styles */
+}
+.customShapeDividerTop1721137628 .credits {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-top: 2%;
+}
+.customShapeDividerTop1721137628 h3, .customShapeDividerTop1721137628 p, .customShapeDividerTop1721137628 h2 {
+  color: #fff;
+}
+.customShapeDividerTop1721137628 .contentFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 9%;
+}
+.customShapeDividerTop1721137628 .leftSide {
+  flex: 1;
+  margin-left: 2%;
+}
+.customShapeDividerTop1721137628 .leftSide .shopLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 25% 0 25%;
+}
+.customShapeDividerTop1721137628 .leftSide .shopLinks .shop h3 {
+  padding-bottom: 12px;
+}
+.customShapeDividerTop1721137628 .leftSide .shopLinks .shop .shopLinks2 p {
+  padding-bottom: 5px;
+}
+.customShapeDividerTop1721137628 .leftSide .shopLinks .us h3 {
+  padding-bottom: 12px;
+}
+.customShapeDividerTop1721137628 .leftSide .shopLinks .us .usLinks p {
+  padding-bottom: 5px;
+}
+.customShapeDividerTop1721137628 .logoName {
+  flex: 1;
+  text-align: center;
+}
+.customShapeDividerTop1721137628 .logoName .logoImg {
+  width: 40%;
+}
+.customShapeDividerTop1721137628 .rightSide {
+  flex: 1;
+  margin-right: 2%;
+  margin-top: 8%;
+}
+.customShapeDividerTop1721137628 .rightSide .socialIcons {
+  display: flex;
+  margin-left: 40%;
+}
+.customShapeDividerTop1721137628 .rightSide .socialIcons .socialIcon {
+  color: #fff;
+  width: 35%;
+}
+.customShapeDividerTop1721137628 .rightSide h3 {
+  padding-top: 10%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.customShapeDividerTop1721137628 .title {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2rem;
+}
+.customShapeDividerTop1721137628 h3 {
+  font-family: "Jost", sans-serif;
+  font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  .customShapeDividerTop1721137628 .contentFooter {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25%;
+  }
+  .customShapeDividerTop1721137628 .contentFooter .leftSide,
+  .customShapeDividerTop1721137628 .contentFooter .rightSide {
+    flex: none;
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .customShapeDividerTop1721137628 .contentFooter .leftSide .shopLinks,
+  .customShapeDividerTop1721137628 .contentFooter .rightSide .shopLinks {
+    margin: 0;
+    justify-content: space-around;
+  }
+  .customShapeDividerTop1721137628 .contentFooter .logoName {
+    order: -1;
+    margin-bottom: 30px;
+    padding-top: 200px;
+  }
+  .customShapeDividerTop1721137628 .contentFooter .logoName .logoImg {
+    width: 40%;
+  }
+  .customShapeDividerTop1721137628 .contentFooter .rightSide .socialIcons {
+    margin-left: 0;
+    justify-content: center;
+  }
+  .customShapeDividerTop1721137628 .contentFooter .rightSide .socialIcons .socialIcon {
+    width: 25%;
+  }
+  .customShapeDividerTop1721137628 .contentFooter .rightSide h3 {
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .customShapeDividerTop1721137628 .contentFooter {
+    padding-top: 30%;
+  }
+  .customShapeDividerTop1721137628 .contentFooter .leftSide .shopLinks {
+    gap: 20px;
+  }
+  .customShapeDividerTop1721137628 .contentFooter .leftSide .shopLinks .shop,
+  .customShapeDividerTop1721137628 .contentFooter .leftSide .shopLinks .us {
+    width: 100%;
+  }
+  .customShapeDividerTop1721137628 .contentFooter .logoName {
+    padding-top: 180px;
+  }
+  .customShapeDividerTop1721137628 .contentFooter .logoName .logoImg {
+    width: 30%;
+  }
+  .customShapeDividerTop1721137628 .contentFooter .logoName .title {
+    font-size: 1.5rem;
+  }
+  .customShapeDividerTop1721137628 .contentFooter .rightSide .socialIcons .socialIcon {
+    width: 25%;
+  }
+  .customShapeDividerTop1721137628 .contentFooter .rightSide h3 {
+    font-size: 1.2rem;
+  }
+  .customShapeDividerTop1721137628 .credits {
+    margin-top: 5%;
+  }
+}
+@media (max-width: 375px) {
+  .customShapeDividerTop1721137628 .contentFooter {
+    padding-top: 35%;
+  }
+  .customShapeDividerTop1721137628 .contentFooter .leftSide,
+  .customShapeDividerTop1721137628 .contentFooter .rightSide {
+    margin: 10px 0;
+    text-align: center;
+  }
+  .customShapeDividerTop1721137628 .contentFooter .leftSide .shopLinks,
+  .customShapeDividerTop1721137628 .contentFooter .rightSide .shopLinks {
+    gap: 10px;
+  }
+  .customShapeDividerTop1721137628 .contentFooter .logoName .logoImg {
+    width: 25%;
+  }
+}/*# sourceMappingURL=Footer.css.map */

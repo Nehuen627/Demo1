@@ -1,0 +1,111 @@
+.perfilContent .pBox {
+  background-color: #eddce2;
+  margin: 50px 350px;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.166);
+  padding: 40px;
+}
+.perfilContent .pBox .pPic {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.perfilContent .pBox .pPic:hover {
+  transform: scale(1.05);
+}
+.perfilContent .pBox .pPic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.perfilContent .pBox .pInfo {
+  text-align: center;
+  margin-top: 30px;
+}
+.perfilContent .pBox .pInfo h2 {
+  font-family: "Jost", sans-serif;
+  font-size: 2rem;
+  color: #8e173d;
+  margin-bottom: 10px;
+}
+.perfilContent .pBox .pInfo h3 {
+  font-family: "Jost", sans-serif;
+  font-size: 1.2rem;
+  color: #7f2121;
+}
+.perfilContent .pBox .pBtns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.perfilContent .pBox .pBtns button {
+  background-color: #8e173d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: "Jost", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.perfilContent .pBox .pBtns button:hover {
+  background-color: #62102a;
+}
+@media (max-width: 768px) {
+  .perfilContent .pBox {
+    margin: 50px 50px;
+    padding: 30px;
+  }
+  .perfilContent .pBox .pPic {
+    width: 150px;
+    height: 150px;
+  }
+  .perfilContent .pBox .pInfo h2 {
+    font-size: 1.5rem;
+  }
+  .perfilContent .pBox .pInfo h3 {
+    font-size: 1rem;
+  }
+  .perfilContent .pBox .pBtns button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  .perfilContent .pBox {
+    margin: 20px;
+    padding: 20px;
+  }
+  .perfilContent .pBox .pPic {
+    width: 120px;
+    height: 120px;
+  }
+  .perfilContent .pBox .pInfo h2 {
+    font-size: 1.2rem;
+  }
+  .perfilContent .pBox .pInfo h3 {
+    font-size: 0.9rem;
+  }
+  .perfilContent .pBox .pBtns button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+.notLogged {
+  margin: 200px;
+  padding: 20px;
+  font-family: "Jost", sans-serif;
+  color: #8e173d;
+  font-size: 2rem;
+  background-color: #eddce2;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.166);
+}/*# sourceMappingURL=Perfil.css.map */

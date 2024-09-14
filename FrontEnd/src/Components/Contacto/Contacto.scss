@@ -1,0 +1,252 @@
+@use '../../Sass/Colors.scss' as a;
+@use '../../Sass/Fonts.scss' as b;
+
+.contactoContent {
+    h1, h2 {
+        font-family: b.$Jost;
+    }
+    h2, h1, p, h3 {
+        color: a.$Wine;
+    }
+    .topBlock {
+        background-color: a.$Burgundy2;
+        border-radius: 20px;
+        box-shadow: 0 4px 6px a.$BlackShadow2;
+        width: 40%;
+        padding: 20px;
+        text-align: center;
+        margin: 20px auto 40px auto;
+        h2, h1, p, h3 {
+            color: a.$White;
+        }
+    }
+    .contentBlock {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        .form {
+            background-color: a.$GreyPink;
+            border-radius: 30px;
+            padding: 20px;
+            box-shadow: 0 4px 6px a.$BlackShadow2;
+            width: 55%;
+            margin-left: 180px;
+            .personalInfo {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px; 
+                .emailInfo {
+                    input {
+                        width: 80%;
+                        background-color: a.$Wine;
+                        color: a.$White;
+                        border: none;
+                        border-radius: 8px;
+                        padding: 10px;
+                        box-shadow: 0 4px 6px a.$BlackShadow;
+                        outline: none;
+                    }
+                    width: 48%;
+                }
+                .nameInfo {
+                    input {
+                        width: 80%;
+                        background-color: a.$Wine;
+                        color: a.$White;; 
+                        border: none;
+                        border-radius: 8px;
+                        padding: 10px;
+                        box-shadow: 0 4px 6px a.$BlackShadow;
+                        outline: none;
+                    }
+                    width: 48%;
+                    padding-right: 50px;
+                }
+            }
+            .messageInfo {
+                display: flex;
+                .messageArea {
+                    width: 100%; 
+                    textarea {
+                        width: 90%;
+                        background-color: a.$Wine;
+                        color: a.$White;; 
+                        border: none;
+                        border-radius: 8px;
+                        padding: 10px;
+                        box-shadow: 0 4px 6px a.$BlackShadow;
+                        outline: none;
+                        height: 300px;
+                    }
+                }
+                .sendBtn {
+                    display: flex;
+                    align-items: flex-end;
+                    button{
+                        border: none;
+                        border-radius: 50%;
+                        padding: 15px; 
+                        margin-left: 10px; 
+                        color: a.$Wine;
+                        cursor: pointer;
+                        box-shadow: 0 4px 6px a.$BlackShadow;
+                        align-items: center;
+                        justify-content: center;
+                        transition: background-color 0.3s ease;
+
+                        &:hover {
+                            background-color: darken(a.$GreyPink2, 10%);
+                        }
+                    }
+                }
+            }
+        }
+        .infoManual {
+            background-color: a.$GreyPink;
+            border-radius: 30px;
+            padding: 20px; 
+            box-shadow: 0 4px 6px a.$BlackShadow2;
+            width: 20%;
+            height: 20%;
+            margin-right: 150px;
+            margin-left: 20px;
+        }
+    }
+    .notification {
+        position: fixed;
+        top: 80px;
+        left: 85%;
+        transform: translateX(-50%);
+        background: a.$Wine;
+        color: a.$White;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .error {
+        background: a.$Burgundy;
+    }
+
+    // Tablet breakpoint (768px)
+    @media (max-width: 768px) {
+        .topBlock {
+            width: 80%;
+            padding: 20px;
+            h1 {
+                font-size: 1.8rem;
+            }
+            h3 {
+                font-size: 1rem;
+            }
+        }
+        .contentBlock {
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+
+            .form, .infoManual {
+                width: 85%;
+                max-width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .form {
+                padding: 15px;
+                margin: 20px 0;
+                .personalInfo {
+                    flex-direction: column;
+                    .emailInfo, .nameInfo {
+                        width: 100%;
+                        margin-bottom: 15px;
+                        input {
+                            width: 90%;
+                        }
+                    }
+                }
+                .messageInfo {
+                    flex-direction: column;
+                    align-items: center;
+                    .messageArea {
+                        width: 90%;
+                        margin-bottom: 15px;
+                        textarea {
+                            height: 300px;
+                        }
+                    }
+                    .sendBtn {
+                        width: 100%;
+                        justify-content: center;
+                    }
+                }
+            }
+            .infoManual {
+                margin: 0;
+            }
+        }
+    }
+
+    // Phone breakpoint (480px)
+    @media (max-width: 480px) {
+        .topBlock {
+            width: 90%;
+            padding: 15px;
+            h1 {
+                font-size: 1.4rem;
+            }
+            h3 {
+                font-size: 0.8rem;
+            }
+        }
+        .contentBlock {
+            margin: 0;
+
+            .form {
+                width: 85%;
+                max-width: 100%;
+                padding: 15px;
+                margin: 20px 0;
+
+                .personalInfo {
+                    flex-direction: column;
+                    .emailInfo, .nameInfo {
+                        width: 100%;
+                        margin-bottom: 15px;
+                        input {
+                            width: 90%;
+                        }
+                    }
+                    .nameInfo {
+                        padding-right: 0;
+                    }
+                }
+                .messageInfo {
+                    flex-direction: column;
+                    align-items: center;
+                    .messageArea {
+                        width: 90%;
+                        margin-bottom: 15px;
+                        textarea {
+                            height: 300px;
+                        }
+                    }
+                    .sendBtn {
+                        width: 100%;
+                        justify-content: center;
+                    }
+                }
+            }
+            .infoManual {
+                width: 85%;
+                max-width: 100%;
+                padding: 15px;
+                margin: 0;
+            }
+        }
+        .notification {
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            text-align: center;
+        }
+    }
+}
