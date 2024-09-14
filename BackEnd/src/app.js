@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 /* Initialize cors */
 
 app.use(cors({
-    origin:  'https://66e4e3999ec0ffb9e06c4ced--cozy-pie-268a12.netlify.app',
+    origin:  'https://cozy-pie-268a12.netlify.app/',
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
     credentials: true
